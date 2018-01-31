@@ -1,0 +1,39 @@
+extends ../../common.blocks/base/base
+
+include ../../common.blocks/button/button
+include ../../common.blocks/dial-percentages/dial-percentages
+
+block title
+  |FlatUI
+block main
+  .page_over
+    .page
+      .title-block= "STANDARD  BUTTONS"
+      .position-button
+        +button('small','blue','BUTTON')
+      .position-button
+        +button('small','blue','BUTTON','disabled')
+      .position-button
+        +button('normal','blue','BUTTON')
+      .position-button
+        +button('normal','blue','BUTTON','disabled')
+      .position-button
+        +button('normal','red','BUTTON')
+      .position-button
+        +button('normal','red','BUTTON','disabled')  
+      .position-button
+        +button('small','red','BUTTON')
+      .position-button
+        +button('small','red','BUTTON','disabled') 
+      .title-block= "ARROW  BUTTONS"
+      .title-block= "PERCENTAGES / PIE CHART"
+      +dial-percentages('89')
+      .title-block= "SLIDERS"
+      .title-block= "STAGES"
+      .title-block= "FORM  ELEMENTS"
+      .title-block= "NEWS  &  EVENTS"
+      .title-block= "LOCATION"
+      .title-block= "VIDEO"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hTWKbfoikeg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

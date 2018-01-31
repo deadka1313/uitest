@@ -1,0 +1,5 @@
+mixin button(size,color,text,disabled)
+  if disabled == 'disabled'       
+    button(type="button" disabled class="button button__size-"+size+" button__color-"+color)= text
+  else 
+    button(type="button" class="button button__size-"+size+" button__color-"+color) BUTTON
