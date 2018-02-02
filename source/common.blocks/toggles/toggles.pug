@@ -1,0 +1,11 @@
+mixin toggles(nameTog,value,checked,disabled)
+  if disabled == 'disabled'    
+    if checked == 'cheked'   
+      input(type="checkbox" name=""+nameTog disabled="disabled" class="lcs_check" autocomplete="off" checked="checked")
+    else      
+      input(type="checkbox" name=""+nameTog disabled="disabled" class="lcs_check" autocomplete="off")
+  else    
+    if checked == 'cheked'    
+      input(type="checkbox" name=""+nameTog  class="lcs_check lcs_tt1" autocomplete="off" checked="checked")
+    else      
+      input(type="checkbox" name=""+nameTog  class="lcs_check" autocomplete="off")
