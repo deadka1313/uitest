@@ -1,47 +1,17 @@
 extends ../../common.blocks/base/base
 
-include ../../common.blocks/button/button
-include ../../common.blocks/dial-percentages/dial-percentages
-include ../../common.blocks/toggles/toggles
-
 block title
   |FlatUI
 block main
   .page_over
     .page
       .title-block= "STANDARD  BUTTONS"
-      .position-button
-        +button('small','blue','BUTTON')
-      .position-button
-        +button('small','blue','BUTTON','disabled')
-      .position-button
-        +button('normal','blue','BUTTON')
-      .position-button
-        +button('normal','blue','BUTTON','disabled')
-      .position-button
-        +button('normal','red','BUTTON')
-      .position-button
-        +button('normal','red','BUTTON','disabled')  
-      .position-button
-        +button('small','red','BUTTON')
-      .position-button
-        +button('small','red','BUTTON','disabled') 
       .title-block= "ARROW  BUTTONS"
       .title-block= "PERCENTAGES / PIE CHART"
-      +dial-percentages('89')
       .title-block= "SLIDERS"
+      .slider-norange
       .title-block= "STAGES"
       .title-block= "FORM  ELEMENTS"
-        form
-          +toggles('check-1','1','cheked')
-          +toggles('check-2','2','uncheked')
-          +toggles('check-3','3','cheked','disabled')
-          +toggles('check-4','4','uncheked','disabled')
       .title-block= "NEWS  &  EVENTS"
-      .title-block= "LOCATION"
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.1128078622987!2d-94.55710618185411!3d39.145143273800706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0fa03d58ce7e3%3A0x70efca75238d551!2sHelen&#39;s+JAD+Bar+%26+Grill!5e0!3m2!1sru!2sru!4v1517381352810" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      .title-block= "LOCATION"      
       .title-block= "VIDEO"
-        .adaptive-wrap
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/hTWKbfoikeg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  

@@ -33,7 +33,13 @@ const common = merge([
       }),
       new webpack.optimize.CommonsChunkPlugin({
         name: 'common'
-      })
+      }),
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery'",
+        "window.$": "jquery"
+       })
     ],
   },
     pug(),

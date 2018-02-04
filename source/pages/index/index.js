@@ -1,4 +1,11 @@
 import './index.styl';
 import 'normalize.css';
 
-import '../../common.blocks/dial-percentages/dial-percentages'
+require('webpack-jquery-ui/slider');
+require('webpack-jquery-ui/css');
+
+$( function() {
+  $( ".slider-norange" ).slider({
+    //range: true
+  });
+} );
