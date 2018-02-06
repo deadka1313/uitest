@@ -1,5 +1,7 @@
 extends ../../common.blocks/base/base
 
+include ../../common.blocks/slider/slider
+
 block title
   |FlatUI
 block main
@@ -8,25 +10,11 @@ block main
       .title-block= "STANDARD  BUTTONS"
       .title-block= "ARROW  BUTTONS"
       .title-block= "PERCENTAGES / PIE CHART"
-      .title-block= "SLIDERS"
-        .slider
-          .ui-slider-handle
-            .custom-handle
-        .block2    
-          .slider2
-            .ui-slider-handle
-          .value0
-            = 0
-          .value1
-            = 25
-          .value2
-            = 50
-          .value3
-            = 75
-          .value4
-            = 100
+      .title-block= "SLIDERS"  
+        +slider('step1','name1')
+        +slider('step25','name2')
       .title-block= "STAGES"
       .title-block= "FORM  ELEMENTS"
       .title-block= "NEWS  &  EVENTS"
-      .title-block= "LOCATION"      
+      .title-block= "LOCATION"    
       .title-block= "VIDEO"

@@ -1,0 +1,64 @@
+.slider
+  &_handle
+    &__step
+      &1
+      &25
+        position relative
+        width 20px!important
+        height 20px!important
+        border-radius 50%
+        outline none
+        top -8px!important
+    
+      &1
+        background redColor
+      &25
+        background blueColor
+
+  &__step1
+    margin-top 45px
+    margin-bottom 12px
+  &__step25
+    margin-top 20px
+    margin-bottom 20px
+  &__step1
+  &__step25
+    background greyColor
+    height 5px!important
+    border-radius 2px
+
+  &_block-value
+    width: 3em;
+    height: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    position absolute
+    bottom 30px
+    right -15px
+    background redColor
+
+  &_text-value
+    &0
+    &1
+    &2
+    &3
+    &4
+      position absolute
+      top 15px
+      font-size 11px
+      color #d7d7d7
+    &0
+      left 0%
+    &1
+      left 25%
+    &2
+      left 50%
+    &3
+      left 75%
+    &4
+      right 0%
+
+
+.ui-widget-header
+  background blueColor
+

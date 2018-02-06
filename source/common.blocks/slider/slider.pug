@@ -1,0 +1,18 @@
+mixin slider(modification, nameid)
+  if modification == 'step1'
+    .slider__step1(id='' + nameid)
+      .ui-slider-handle
+        .slider_block-value
+  else if modification == 'step25'
+    .slider-block__step25 
+      .slider__step25(id='' + nameid)
+        .slider_text-value0
+          = 0
+        .slider_text-value1
+          = 25
+        .slider_text-value2
+          = 50
+        .slider_text-value3
+          = 75
+        .slider_text-value4
+          = 100
