@@ -1,0 +1,73 @@
+.bubble 
+	position relative
+	border-radius .4em
+	text-align center
+
+	&:after
+		content ''
+		position: absolute
+		width 0
+		height 0
+		border 5px solid transparent
+
+	&_left:after 
+		left 0
+		top 50%
+		border-left 0
+		margin-top -5px
+		margin-left -5px
+
+	&_right:after 
+		right 0
+		top 50%
+		border-right 0
+		margin-top -5px
+		margin-right -5px
+
+	&_top:after 
+		top 0
+		left 50%
+		border-top 0
+		margin-left -5px
+		margin-top -5px
+
+	&_bottom:after 
+		bottom 0
+		left 50%
+		border-bottom 0
+		margin-left -5px
+		margin-bottom -5px
+		
+	&__red
+		background redColor
+	&__blue
+		background blueColor
+	&__grey
+		background greyColor
+	
+	&__red.bubble_left:after 		
+		border-right-color redColor
+	&__red.bubble_right:after 	
+		border-left-color redColor	
+	&__red.bubble_top:after 		
+		border-bottom-color redColor
+	&__red.bubble_bottom:after 	
+		border-top-color redColor
+
+	&__blue.bubble_left:after 		
+		border-right-color blueColor
+	&__blue.bubble_right:after 	
+		border-left-color blueColor	
+	&__blue.bubble_top:after 		
+		border-bottom-color blueColor
+	&__blue.bubble_bottom:after 	
+		border-top-color blueColor
+
+	&__grey.bubble_left:after 		
+		border-right-color greyColor
+	&__grey.bubble_right:after 	
+		border-left-color greyColor	
+	&__grey.bubble_top:after 		
+		border-bottom-color greyColor
+	&__grey.bubble_bottom:after 	
+		border-top-color greyColor	
