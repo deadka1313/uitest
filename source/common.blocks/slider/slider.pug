@@ -1,8 +1,10 @@
+include ../bubble/bubble
+
 mixin slider(modification, nameid)
   if modification == 'step1'
     .slider__step1(id='' + nameid)
       .ui-slider-handle
-        .slider_block-value
+        +bubble('bottom', 'red', '', 'slider_block-value')
   else if modification == 'step25'
     .slider-block__step25 
       .slider__step25(id='' + nameid)

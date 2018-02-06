@@ -1,7 +1,7 @@
 require('webpack-jquery-ui');
 
 $( function() {
-  var handle = $( ".slider_block-value" );
+  var handle = $( "#slider_block-value" );
   $( ".slider__step1" ).slider({
     classes: {
       "ui-slider": "slider_track",
