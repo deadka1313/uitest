@@ -11,16 +11,29 @@ block main
   .page_over
     .page
       .title-block= "STANDARD  BUTTONS"
+
       .title-block= "ARROW  BUTTONS"
+
       .title-block= "PERCENTAGES / PIE CHART"
+
       .title-block= "SLIDERS"  
-      +slider('step1','name1')
-      +slider('step25','name2')
+      .sliders-flex
+        .slider-left
+          +slider('step1','name1','22')
+        .slider-right
+          +slider('step25','name2','50')
+
       .title-block= "STAGES"
       +step('5','3')    
+
       .title-block= "FORM  ELEMENTS"
+
       .title-block= "NEWS  &  EVENTS"
-      .title-block= "LOCATION"    
+
+      .title-block= "LOCATION"
+
+      #calendar
+
       .title-block= "VIDEO"
       .video-frame
         +video("79ImZE0K7xc")

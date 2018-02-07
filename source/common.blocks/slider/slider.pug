@@ -1,13 +1,14 @@
 include ../bubble/bubble
 
-mixin slider(modification, nameid)
+mixin slider(modification, nameid, value)
   if modification == 'step1'
-    .slider__step1(id='' + nameid)
+    .slider__step1(id='slider__step1-' + nameid)= value
       .ui-slider-handle
         +bubble('bottom', 'red', '', 'slider_block-value')
+
   else if modification == 'step25'
     .slider-block__step25 
-      .slider__step25(id='' + nameid)
+      .slider__step25(id='slider__step25-' + nameid)= value
         .slider_text-value0
           = 0
         .slider_text-value1
