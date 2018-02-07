@@ -2,6 +2,7 @@ extends ../../common.blocks/base/base
 
 include ../../common.blocks/slider/slider
 include ../../common.blocks/bubble/bubble
+include ../../common.blocks/step/step
 
 block title
   |FlatUI
@@ -15,7 +16,10 @@ block main
       +slider('step1','name1')
       +slider('step25','name2')
       .title-block= "STAGES"
+      +step('5','3')    
       .title-block= "FORM  ELEMENTS"
       .title-block= "NEWS  &  EVENTS"
       .title-block= "LOCATION"    
       .title-block= "VIDEO"
+      
+      

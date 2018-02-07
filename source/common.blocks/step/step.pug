@@ -1,0 +1,10 @@
+mixin step(number, finishNumber)
+  .step_flex
+    .step_circle= 1
+    - for (var x = 2; x <= finishNumber; x++)
+      .step_bar
+      .step_circle= ''+x 
+    -finishNumber++
+    - for (var x = finishNumber; x <= number; x++)
+      .step_bar__none
+      .step_circle__none= ''+x
