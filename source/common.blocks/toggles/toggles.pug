@@ -1,13 +1,12 @@
 mixin toggles(nameTog,checked,disabled)
-  .onoffswitch
-    if disabled == 'disabled'    
-      if checked == 'checked'   
-        input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="toggles-switch" autocomplete="off" checked="checked")
-      else      
-        input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="toggles-switch" autocomplete="off")
-    else    
-      if checked == 'checked'    
-        input(type="checkbox" name=""+nameTog id=""+nameTog  class="toggles-switch" autocomplete="off" checked="checked")
-      else      
-        input(type="checkbox" name=""+nameTog id=""+nameTog  class="toggles-switch" autocomplete="off")
-    label(for=""+nameTog class="toggles-switch_label")
+  if disabled == 'disabled'    
+    if checked == 'checked'   
+      input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="toggles-switch" autocomplete="off" checked="checked")
+    else      
+      input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="toggles-switch" autocomplete="off")
+  else    
+    if checked == 'checked'    
+      input(type="checkbox" name=""+nameTog id=""+nameTog  class="toggles-switch" autocomplete="off" checked="checked")
+    else      
+      input(type="checkbox" name=""+nameTog id=""+nameTog  class="toggles-switch" autocomplete="off")
+  label(for=""+nameTog class="toggles-switch_label")

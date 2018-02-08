@@ -1,0 +1,14 @@
+mixin tick(nameTog,checked,disabled)
+  label
+    if disabled == 'disabled'    
+      if checked == 'checked'   
+        input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="tick-switch" autocomplete="off" checked="checked")
+      else      
+        input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="tick-switch" autocomplete="off")
+    else    
+      if checked == 'checked'    
+        input(type="checkbox" name=""+nameTog id=""+nameTog  class="tick-switch" autocomplete="off" checked="checked")
+      else      
+        input(type="checkbox" name=""+nameTog id=""+nameTog  class="tick-switch" autocomplete="off")
+    label(for=""+nameTog)
+      span
