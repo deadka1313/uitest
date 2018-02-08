@@ -1,11 +1,15 @@
-mixin toggles(nameTog,value,checked,disabled)
-  if disabled == 'disabled'    
-    if checked == 'cheked'   
-      input(type="checkbox" name=""+nameTog disabled="disabled" class="lcs_check" autocomplete="off" checked="checked")
-    else      
-      input(type="checkbox" name=""+nameTog disabled="disabled" class="lcs_check" autocomplete="off")
-  else    
-    if checked == 'cheked'    
-      input(type="checkbox" name=""+nameTog  class="lcs_check lcs_tt1" autocomplete="off" checked="checked")
-    else      
-      input(type="checkbox" name=""+nameTog  class="lcs_check" autocomplete="off")
+mixin toggles(nameTog,checked,disabled)
+  .onoffswitch
+    if disabled == 'disabled'    
+      if checked == 'cheked'   
+        input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="onoffswitch-checkbox" autocomplete="off" checked="checked")
+      else      
+        input(type="checkbox" name=""+nameTog id=""+nameTog disabled="disabled" class="onoffswitch-checkbox" autocomplete="off")
+    else    
+      if checked == 'cheked'    
+        input(type="checkbox" name=""+nameTog id=""+nameTog  class="onoffswitch-checkbox" autocomplete="off" checked="checked")
+      else      
+        input(type="checkbox" name=""+nameTog id=""+nameTog  class="onoffswitch-checkbox" autocomplete="off")
+    label(for=""+nameTog class="onoffswitch-label")
+      span(class="onoffswitch-inner")
+      span(class="onoffswitch-switch")

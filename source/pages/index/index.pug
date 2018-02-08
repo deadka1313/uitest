@@ -6,6 +6,7 @@ include ../../common.blocks/step/step
 include ../../common.blocks/video-youtube/video-youtube
 include ../../common.blocks/arrow-button/arrow-button
 include ../../common.blocks/button/button
+include ../../common.blocks/toggles/toggles
 
 block title
   |FlatUI
@@ -66,7 +67,10 @@ block main
       br
       br
       br
-
+      +toggles('name','cheked')
+      br
+      br
+      +toggles('name','uncheked')
       .title-block= "NEWS  &  EVENTS"
 
       .title-block= "LOCATION"
