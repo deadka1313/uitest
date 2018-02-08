@@ -4,6 +4,7 @@ import 'normalize.css';
 require('webpack-jquery-ui/datepicker');
 
 import '../../common.blocks/slider/slider';
+import '../../common.blocks/button/button';
 
 $('#calendar').datepicker({
   inline: true,

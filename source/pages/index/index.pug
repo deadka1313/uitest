@@ -5,6 +5,7 @@ include ../../common.blocks/bubble/bubble
 include ../../common.blocks/step/step
 include ../../common.blocks/video-youtube/video-youtube
 include ../../common.blocks/arrow-button/arrow-button
+include ../../common.blocks/button/button
 
 block title
   |FlatUI
@@ -12,9 +13,24 @@ block main
   .page_over
     .page
       .title-block= "STANDARD  BUTTONS"
+      .button-inline
+        +button('name1','small','blue','BUTTON')
+        +button('name1','normal','blue','BUTTON')
+        +button('name1','normal','red','BUTTON')
+        +button('name1','small','red','BUTTON')
+      .button-inline
+        +button('name1','small','blue','BUTTON')
+        +button('name1','normal','blue','BUTTON')
+        +button('name1','normal','red','BUTTON')
+        +button('name1','small','red','BUTTON')
+      .button-inline
+        +button('name1','small','blue','BUTTON','disabled')      
+        +button('name1','normal','blue','BUTTON','disabled')      
+        +button('name1','normal','red','BUTTON','disabled')      
+        +button('name1','small','red','BUTTON','disabled')
 
       .title-block= "ARROW  BUTTONS"
-      .button-inline
+      .arrow-button-inline
         +arrow-button('left')
         +arrow-button('right')
         +arrow-button('left','disabled')
