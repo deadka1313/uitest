@@ -15,19 +15,19 @@ block main
       .title-block= "STANDARD  BUTTONS"
       .button-inline
         +button('name1','small','blue','BUTTON')
-        +button('name1','normal','blue','BUTTON')
-        +button('name1','normal','red','BUTTON')
-        +button('name1','small','red','BUTTON')
+        +button('name12','normal','blue','BUTTON')
+        +button('name13','normal','red','BUTTON')
+        +button('name14','small','red','BUTTON')
       .button-inline
-        +button('name1','small','blue','BUTTON')
-        +button('name1','normal','blue','BUTTON')
-        +button('name1','normal','red','BUTTON')
-        +button('name1','small','red','BUTTON')
+        +button('name15','small','blue','BUTTON')
+        +button('name16','normal','blue','BUTTON')
+        +button('name17','normal','red','BUTTON')
+        +button('name18','small','red','BUTTON')
       .button-inline
-        +button('name1','small','blue','BUTTON','disabled')      
+        +button('name19','small','blue','BUTTON','disabled')      
         +button('name1','normal','blue','BUTTON','disabled')      
-        +button('name1','normal','red','BUTTON','disabled')      
-        +button('name1','small','red','BUTTON','disabled')
+        +button('name10','normal','red','BUTTON','disabled')      
+        +button('name111','small','red','BUTTON','disabled')
 
       .title-block= "ARROW  BUTTONS"
       .arrow-button-inline
@@ -49,8 +49,23 @@ block main
 
       .title-block= "STAGES"
       +step('5','3')    
-
+      
+      br
+      br
+      br
       .title-block= "FORM  ELEMENTS"
+      .input-table
+        input(type="text" class="input-form" placeholder="Your Name")
+        .block-input-text
+          +bubble('left','red','ERROR')
+      .input-table
+        input(type="text" class="input-form" placeholder="Your Email")
+        .block-input-text
+          +bubble('left','blue','THANKS!')
+      +button('name123','normal','blue','BUTTON')
+      br
+      br
+      br
 
       .title-block= "NEWS  &  EVENTS"
 
