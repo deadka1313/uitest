@@ -1,0 +1,56 @@
+.arrow-button
+  &_left  
+    transform rotate(135deg)
+    -webkit-transform rotate(135deg)
+    margin-left 16px
+
+  &_right
+    transform rotate(-45deg)
+    -webkit-transform rotate(-45deg)
+    margin-left 12px
+
+  &__normal  
+    border solid blueColor  
+    border-width 0 4px 4px 0
+    display inline-block
+    width 12px
+    height 12px
+
+  &__disabled  
+    border solid white 
+    border-width 0 4px 4px 0
+    display inline-block
+    width 12px
+    height 12px
+
+  &_border
+    &__normal
+      width 44px
+      height 44px
+      background-color white
+      border solid 3px blueColor
+      border-radius 50%
+      display flex
+      flex-direction 
+      justify-content center
+      flex-wrap nowrap
+      align-items center
+
+      &:hover  
+        background-color blueColor
+
+      &:hover > .arrow-button__normal
+        border solid white 
+        border-width 0 4px 4px 0
+
+    &__disabled
+      width 44px
+      height 44px
+      background-color greyColor
+      border solid 3px greyColor
+      border-radius 50%
+      display flex
+      flex-direction 
+      justify-content center
+      flex-wrap nowrap
+      align-items center

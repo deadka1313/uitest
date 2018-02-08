@@ -4,6 +4,7 @@ include ../../common.blocks/slider/slider
 include ../../common.blocks/bubble/bubble
 include ../../common.blocks/step/step
 include ../../common.blocks/video-youtube/video-youtube
+include ../../common.blocks/arrow-button/arrow-button
 
 block title
   |FlatUI
@@ -13,15 +14,22 @@ block main
       .title-block= "STANDARD  BUTTONS"
 
       .title-block= "ARROW  BUTTONS"
+      .button-inline
+        +arrow-button('left')
+        +arrow-button('right')
+        +arrow-button('left','disabled')
+        +arrow-button('right','disabled')
+        +arrow-button('left')
+        +arrow-button('right')
 
       .title-block= "PERCENTAGES / PIE CHART"
 
       .title-block= "SLIDERS"  
       .sliders-flex
         .slider-left
-          +slider('step1','name1','22')
+          +slider('step1','name1','14')
         .slider-right
-          +slider('step25','name2','50')
+          +slider('step25','name2','75')
 
       .title-block= "STAGES"
       +step('5','3')    

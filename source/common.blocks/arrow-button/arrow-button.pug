@@ -1,0 +1,15 @@
+mixin arrow-button(position,disabled)
+  if disabled == 'disabled'  
+    if position == 'left'   
+      .arrow-button_border__disabled
+        .arrow-button__disabled.arrow-button_left.arrow-button_left__disabled
+    else if position == 'right'   
+      .arrow-button_border__disabled
+        .arrow-button__disabled.arrow-button_right.arrow-button_right__disabled
+  else 
+    if position == 'left'   
+      .arrow-button_border__normal
+        .arrow-button__normal.arrow-button_left
+    else if position == 'right'   
+      .arrow-button_border__normal
+        .arrow-button__normal.arrow-button_right
