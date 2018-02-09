@@ -1,20 +1,11 @@
-.dial {
-	border-color: #22262f;
-	color: #689F38;
-	display: inline-block;
-	text-align: left;
-	p {
-    font-family:'Conv_Lato-Light';
-		text-align:center;
-    font-size: 40px;    
-		color: #9d9d9d;
-		white-space: nowrap;
-		position: relative;
-		overflow: hidden;
-		z-index: 1;
-		margin: 0;
-	}
-	canvas {
-		position: absolute;
-	}
-}
+.dial-percentages circle 
+  fill: rgba(0,0,0,.5)
+  stroke: white
+  stroke-width: 5
+  stroke-dasharray: 282px 282px
+
+.dial-percentages circle:nth-child(2n) 
+  fill: rgba(0,0,0,0)
+  stroke: redColor
+  stroke-width: 5
+

@@ -1,70 +1,70 @@
 .tick-switch
     display none
 
-.tick-switch + label
-    display block
-    width 24px
-    height 24px
-    border-radius 50%
-    background-color greyColor
-    text-align: center
-    overflow hidden
-    position relative
+    & + label
+        display block
+        width 24px
+        height 24px
+        border-radius 50%
+        background-color greyColor
+        text-align: center
+        overflow hidden
+        position relative
 
-.tick-switch:checked + label span
-    position relative
-    display inline-block    
-    margin-left -9px
+    &:checked + label span
+        position relative
+        display inline-block    
+        margin-left -9px
 
-.tick-switch:checked + label span:before
-    content ''
-    position absolute 
-    left -1px
-    top 0px 
-    width 5px
-    height 2px
-    background white
-    -webkit-transform rotate(50deg)
-    transform rotate(50deg)
+    &:checked + label span:before
+        content ''
+        position absolute 
+        left -1px
+        top 0px 
+        width 5px
+        height 2px
+        background white
+        -webkit-transform rotate(50deg)
+        transform rotate(50deg)
 
-.tick-switch:checked + label span:after
-    content ''
-    position absolute 
-    left: 1px
-    top -1px
-    width 11px
-    height 2px
-    background white
-    -webkit-transform rotate(-43deg)
-    transform rotate(-43deg)   
+    &:checked + label span:after
+        content ''
+        position absolute 
+        left: 1px
+        top -1px
+        width 11px
+        height 2px
+        background white
+        -webkit-transform rotate(-43deg)
+        transform rotate(-43deg)   
 
-.tick-switch+ label span
-    position relative
-    display inline-block    
-    margin-left -9px
+    & + label span
+        position relative
+        display inline-block    
+        margin-left -9px
 
-.tick-switch + label span:before
-    content ''
-    position absolute 
-    left -1px
-    top 0px 
-    width 5px
-    height 2px
-    background #c0c0c0
-    -webkit-transform rotate(50deg)
-    transform rotate(50deg)
+    & + label span:before
+        content ''
+        position absolute 
+        left -1px
+        top 0px 
+        width 5px
+        height 2px
+        background #c0c0c0
+        -webkit-transform rotate(50deg)
+        transform rotate(50deg)
 
-.tick-switch + label span:after
-    content ''
-    position absolute 
-    left: 1px
-    top -1px
-    width 11px
-    height 2px
-    background #c0c0c0
-    -webkit-transform rotate(-43deg)
-    transform rotate(-43deg)   
-    
+    & + label span:after
+        content ''
+        position absolute 
+        left: 1px
+        top -1px
+        width 11px
+        height 2px
+        background #c0c0c0
+        -webkit-transform rotate(-43deg)
+        transform rotate(-43deg)   
+        
 
-.tick-switch:checked + label
-  background-color blueColor
+    &:checked + label
+        background-color blueColor

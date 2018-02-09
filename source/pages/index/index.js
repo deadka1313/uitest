@@ -5,6 +5,7 @@ require('webpack-jquery-ui/datepicker');
 
 import '../../common.blocks/slider/slider';
 import '../../common.blocks/button/button';
+import '../../common.blocks/dial-percentages/dial-percentages';
 
 $('#calendar').datepicker({
   inline: true,

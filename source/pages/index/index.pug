@@ -8,6 +8,7 @@ include ../../common.blocks/arrow-button/arrow-button
 include ../../common.blocks/button/button
 include ../../common.blocks/toggles/toggles
 include ../../common.blocks/tick/tick
+include ../../common.blocks/dial-percentages/dial-percentages
 
 block title
   |FlatUI
@@ -41,6 +42,11 @@ block main
         +arrow-button('right')
 
       .title-block= "PERCENTAGES / PIE CHART"
+      .dial-flex
+        +dial-percentages("0")
+        +dial-percentages("38")
+        +dial-percentages("62")
+        +dial-percentages("89")
 
       .title-block= "SLIDERS"  
       .sliders-flex
