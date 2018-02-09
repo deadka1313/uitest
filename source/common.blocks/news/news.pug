@@ -1,0 +1,7 @@
+mixin news(url,caption,date,text)
+  .news
+    img(src=require(""+url))
+    .news_content
+      .news_caption= caption
+      .news_date= date
+      .news_text= text

@@ -10,6 +10,7 @@ include ../../common.blocks/toggles/toggles
 include ../../common.blocks/tick/tick
 include ../../common.blocks/dial-percentages/dial-percentages
 include ../../common.blocks/photo-circle/photo-circle
+include ../../common.blocks/news/news
 
 block title
   |FlatUI
@@ -76,10 +77,12 @@ block main
       .flex-but    
         +tick('tiname','checked')
         +tick('tiname1','unchecked')
-      .title-block= "NEWS  &  EVENTS"      
+      .title-block= "NEWS  &  EVENTS"  
+      .news-block   
+        +news("./img/news.jpg",'It’s all going downhill','24  AUGUST  2013','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.') 
       .title-block= "USER PROFILE"
-      +photo-circle("./man.jpg",'84px')
-      +photo-circle("./woman.jpg",'84px')
+      +photo-circle("./img/man.jpg",'84px')
+      +photo-circle("./img/woman.jpg",'84px')
 
       .title-block= "LOCATION"
 
