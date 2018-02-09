@@ -1,0 +1,12 @@
+include ../button/button
+
+mixin events(url,day,months,title,text,buttonText,idButton)
+  .events
+    img(src=require(""+url))
+    .events_content
+      .events_date
+        .events_date__day= day
+        .events_date__months= months
+      .events_title= title
+      .events_text= text
+      +button(''+idButton,'small','blue',''+buttonText,'disabled')

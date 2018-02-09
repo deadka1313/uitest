@@ -11,6 +11,7 @@ include ../../common.blocks/tick/tick
 include ../../common.blocks/dial-percentages/dial-percentages
 include ../../common.blocks/photo-circle/photo-circle
 include ../../common.blocks/news/news
+include ../../common.blocks/events/events
 
 block title
   |FlatUI
@@ -80,6 +81,7 @@ block main
       .title-block= "NEWS  &  EVENTS"  
       .news-block   
         +news("./img/news.jpg",'It’s all going downhill','24  AUGUST  2013','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.') 
+        +events("./img/events.jpg",'24','Aug','THIS IS THE TITLE','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','ADD  TO  CALENDAR')
       .title-block= "USER PROFILE"
       +photo-circle("./img/man.jpg",'84px')
       +photo-circle("./img/woman.jpg",'84px')
