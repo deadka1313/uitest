@@ -9,6 +9,7 @@ include ../../common.blocks/button/button
 include ../../common.blocks/toggles/toggles
 include ../../common.blocks/tick/tick
 include ../../common.blocks/dial-percentages/dial-percentages
+include ../../common.blocks/photo-circle/photo-circle
 
 block title
   |FlatUI
@@ -66,14 +67,19 @@ block main
         input(type="text" class="input-form" placeholder="Your Email")
         .block-input-text
           +bubble('left','blue','THANKS!')
-      +button('bname123','normal','blue','BUTTON')
+      +button('bname123','normal','blue','BUTTON')      
+      .title-block= "TOGGLES"
       .flex-but    
         +toggles('tname','checked')
-        +toggles('tname1','unchecked')
+        +toggles('tname1','unchecked')        
+      .title-block= "TICK  BOXES"
       .flex-but    
         +tick('tiname','checked')
         +tick('tiname1','unchecked')
-      .title-block= "NEWS  &  EVENTS"
+      .title-block= "NEWS  &  EVENTS"      
+      .title-block= "USER PROFILE"
+      +photo-circle("./man.jpg",'84px')
+      +photo-circle("./woman.jpg",'84px')
 
       .title-block= "LOCATION"
 
