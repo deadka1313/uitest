@@ -1,27 +1,67 @@
-.dial-all	
+.dial
 	position relative
 	display flex
 	justify-content center
 	align-items center
-.dial-percentages
-	& circle 
-		position absolute
-		fill rgba(0,0,0,0)
-		stroke white
-		stroke-width 5
-		stroke-dasharray 282px 282px
+	&-percentages
+		& circle 
+			position absolute
+			fill rgba(0,0,0,0)
+			stroke-width 5
+			stroke-dasharray 282px 282px
 
-	& circle:nth-child(2n) 
-		position absolute
-		fill rgba(0,0,0,0)
-		stroke redColor
-		stroke-width 5
+		& circle:nth-child(2n) 
+			position absolute
+			stroke redColor
+			stroke-width 5
 
-	&_text
-		position absolute
-		color #9d9d9d
-		font-size 40px
-		font-family 'Conv_Lato-Light'
-		margin-top -2px
-		margin-left -3px
-		letter-spacing: -3px
+		&_text
+			position absolute
+			color #9d9d9d
+			font-size 40px
+			font-family 'Conv_Lato-Light'
+			margin-top -2px
+			margin-left -3px
+			letter-spacing: -3px
+			
+	&-percentages-all
+		& circle 
+			position absolute
+			fill rgba(0,0,0,0)
+			stroke white
+			stroke-width 5
+			stroke-dasharray 245px 245px
+
+		& circle:nth-child(2n) 
+			position absolute
+			fill rgba(0,0,0,0)
+			stroke #e5e5e5
+			stroke-width 17
+			
+		& circle:nth-child(3n) 
+			position absolute
+			fill rgba(0,0,0,0)
+			stroke #4eb7a8
+			stroke-width 17
+			
+		& circle:nth-child(4n) 
+			position absolute
+			fill rgba(0,0,0,0)
+			stroke #e75735
+			stroke-width 17
+			
+		& circle:nth-child(5n) 
+			position absolute
+			fill rgba(0,0,0,0)
+			stroke #747474
+			stroke-width 17
+
+		&_text
+			position absolute
+			color #9d9d9d
+			font-size 40px
+			font-family 'Conv_Lato-Light'
+			margin-top -2px
+			margin-left -3px
+			letter-spacing: -3px
+

@@ -1,4 +1,21 @@
 mixin dial-percentages(percentages)
-  .dial-all
+  .dial
     .dial-percentages= percentages
     .dial-percentages_text= percentages
+
+mixin dial-percentages-all(item1,item2,item3)
+  if item1.length == 1
+    - item1=0+item1
+  if item2.length == 1
+    - item2=0+item2
+  if item3.length == 1
+    - item3=0+item3
+  if item1.length == 2
+    - item1=0+item1
+  if item2.length == 2
+    - item2=0+item2
+  if item3.length == 2
+    - item3=0+item3
+  .dial
+    .dial-percentages-all= item1+item2+item3
+    

@@ -13,6 +13,7 @@ include ../../common.blocks/photo-circle/photo-circle
 include ../../common.blocks/news/news
 include ../../common.blocks/events/events
 include ../../common.blocks/form/form
+include ../../common.blocks/user-profile/user-profile
 
 block title
   |FlatUI
@@ -53,6 +54,7 @@ block main
         +dial-percentages("38")
         +dial-percentages("62")
         +dial-percentages("89")
+        +dial-percentages-all('11','27','29')
 
       .title-block= "SLIDERS"  
       .sliders-flex
@@ -81,8 +83,8 @@ block main
             +tick('tiname1','unchecked')
             
       .title-block__mini= "USER PROFILE"
-      +photo-circle("./img/man.jpg",'84px')
-      +photo-circle("./img/woman.jpg",'84px')
+      +user-profile("./img/man.jpg","grey","John Smith","UX  DESIGNER")
+      +user-profile("./img/woman.jpg","blue","Sarah Brown","DEVELOPER")
 
       .title-block= "NEWS  &  EVENTS"  
       .news-block   

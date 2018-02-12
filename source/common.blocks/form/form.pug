@@ -1,5 +1,5 @@
 mixin form()
-  form(name="form-message" onsubmit="return checkForm()")
+  form(name="form-message" onsubmit="return valid()")
     .input-table
       input(type="text" name="name-message-form" style="width: 186px" placeholder="Your Name")
       .block-input-text

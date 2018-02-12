@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "uitest",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/deadka1313/portfolio.git",
+  "repository": "https://github.com/deadka1313/uitest.git",
   "author": "deadka1313 <deadka1313@gmail.com>",
   "license": "MIT",
   "scripts": {
