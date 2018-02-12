@@ -12,29 +12,32 @@
 @import '../../common.blocks/photo-circle/photo-circle.styl'
 @import '../../common.blocks/news/news.styl'
 @import '../../common.blocks/events/events.styl'
+@import '../../common.blocks/form/form.styl'
 
 .title-block
   width 100%
   text-align center
   font-size 18px
-  letter-spacing 0.93px
+  letter-spacing 1px
+  margin-top 85px
 
 .sliders-flex
   display flex
   flex-direction row
   justify-content space-between
   flex-wrap wrap
+  margin-top 7px
+  margin-bottom -42px
 
 .slider-left
   width 43.55%
   min-width 200px
-  margin-left 6px
 
 .slider-right
   width 43.55%
   min-width 200px
   margin-top 17px
-  margin-left 6px
+  margin-right 7px
 
 .video-frame
   max-width 594px
@@ -44,7 +47,7 @@
   flex-direction row
   justify-content space-between
   width 420px
-  margin 0 auto
+  margin 35px auto -38px auto
 
 .button-inline
   display flex
@@ -52,42 +55,71 @@
   justify-content space-between
   flex-wrap nowrap
   align-items flex-end
-  width 465px
+  width 465px  
   margin 0 auto 19px auto
 
-.input-table
-  display flex
-  flex-direction row  
-  justify-content flex-start
-  flex-wrap nowrap
-  align-items center
-  height 28px
-  margin-bottom 12px
+.button-block
+  margin-top 67px
+  margin-bottom -30px
 
 .block-input-text
   width 72px  
   font-size 10px
   line-height 28px
   color white
-
-.input-form
-  width 206px
-  height 26px
-  margin-right 8px
-  border none
-  background greyColor 
-  font-size 14px
+  margin-left 8px
 
 .flex-but
   display: flex
   flex-direction: row
   justify-content: center
+  margin 28px -19px 40px 0
+  & label
+    margin-right 14px
+
+.button-input
+  float right
+  margin-right 97px
+
+.but-tick 
+  margin-right -17px
+  & label
+    margin-right 9px
+    margin-top 1px
 
 .dial-flex
   display: flex
   flex-direction: row
   justify-content space-between
-  margin 0 auto
+  margin 25px auto -51px auto
 
 .news-block
-  width 288px
+  display flex  
+  flex-direction row
+  & .news 
+    max-width 288px
+    margin-right 18px
+  & .events 
+    max-width 288px
+
+.step-block
+  margin-top 24px
+  margin-bottom -29px
+
+.form-block
+  display flex
+  flex-direction row
+  justify-content space-between
+  margin-top 48px
+
+.form-left
+  margin-left 1px
+
+.form-right
+  margin 0 80px 0 0
+
+.title-block__mini
+  margin-right -7px
+  text-align center
+  font-size 18px
+  letter-spacing 0.8px  

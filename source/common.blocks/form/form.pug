@@ -1,0 +1,13 @@
+mixin form()
+  form(name="form-message" onsubmit="return checkForm()")
+    .input-table
+      input(type="text" name="name-message-form" style="width: 186px" placeholder="Your Name")
+      .block-input-text
+        +bubble('left','red','ERROR','errorBubble')
+    .input-table
+      input(type="text" name="email-message-form" style="width: 186px" placeholder="Your Email")
+      .block-input-text
+        +bubble('left','blue','THANKS!','thanksBubble')
+    textarea(name="message-form" cols="35" rows="4" placeholder="Your Massage" style="margin-bottom: 3px;")
+    .button-input
+      +button('submit-message-form','normal','blue','SUBMIT','submit') 

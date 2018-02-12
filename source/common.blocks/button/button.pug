@@ -1,5 +1,5 @@
-mixin button(nameBut,size,color,text,disabled)
-  if disabled == 'disabled'    
-      button(type="button" name=""+nameBut disabled class="button button__size-"+size+" button__color-"+color)= text
-  else 
-      button(type="button" name=""+nameBut class="button button__size-"+size+" button__color-"+color)= text
+mixin button(nameBut,size,color,text,typeBut,disabled)
+    if disabled == 'disabled'    
+        button(type=""+typeBut name=""+nameBut disabled class="button button__size-"+size+" button__color-"+color)= text
+    else 
+        button(type=""+typeBut name=""+nameBut class="button button__size-"+size+" button__color-"+color)= text

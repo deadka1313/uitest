@@ -12,28 +12,31 @@ include ../../common.blocks/dial-percentages/dial-percentages
 include ../../common.blocks/photo-circle/photo-circle
 include ../../common.blocks/news/news
 include ../../common.blocks/events/events
+include ../../common.blocks/form/form
 
 block title
   |FlatUI
 block main
   .page_over
     .page
+
       .title-block= "STANDARD  BUTTONS"
-      .button-inline
-        +button('bname1','small','blue','BUTTON')
-        +button('bname12','normal','blue','BUTTON')
-        +button('bname13','normal','red','BUTTON')
-        +button('bname14','small','red','BUTTON')
-      .button-inline
-        +button('bname15','small','blue','BUTTON')
-        +button('bname16','normal','blue','BUTTON')
-        +button('bname17','normal','red','BUTTON')
-        +button('bname18','small','red','BUTTON')
-      .button-inline
-        +button('bname19','small','blue','BUTTON','disabled')      
-        +button('bname1','normal','blue','BUTTON','disabled')      
-        +button('bname10','normal','red','BUTTON','disabled')      
-        +button('bname111','small','red','BUTTON','disabled')
+      .button-block
+        .button-inline
+          +button('bname1','small','blue','BUTTON','button','BUTTON','button')
+          +button('bname12','normal','blue','BUTTON','button')
+          +button('bname13','normal','red','BUTTON','button')
+          +button('bname14','small','red','BUTTON','button')
+        .button-inline
+          +button('bname15','small','blue','BUTTON','button')
+          +button('bname16','normal','blue','BUTTON','button')
+          +button('bname17','normal','red','BUTTON','button')
+          +button('bname18','small','red','BUTTON','button')
+        .button-inline
+          +button('bname19','small','blue','BUTTON','button','disabled')      
+          +button('bname1','normal','blue','BUTTON','button','disabled')      
+          +button('bname10','normal','red','BUTTON','button','disabled')      
+          +button('bname111','small','red','BUTTON','button','disabled')
 
       .title-block= "ARROW  BUTTONS"
       .arrow-button-inline
@@ -54,37 +57,37 @@ block main
       .title-block= "SLIDERS"  
       .sliders-flex
         .slider-left
-          +slider('step1','sname1','14')
+          +slider('step1','sname1','40')
         .slider-right
           +slider('step25','sname2','75')
 
       .title-block= "STAGES"
-      +step('5','3')    
+      .step-block
+        +step('5','3')    
+
       .title-block= "FORM  ELEMENTS"
-      .input-table
-        input(type="text" class="input-form" placeholder="Your Name")
-        .block-input-text
-          +bubble('left','red','ERROR')
-      .input-table
-        input(type="text" class="input-form" placeholder="Your Email")
-        .block-input-text
-          +bubble('left','blue','THANKS!')
-      +button('bname123','normal','blue','BUTTON')      
-      .title-block= "TOGGLES"
-      .flex-but    
-        +toggles('tname','checked')
-        +toggles('tname1','unchecked')        
-      .title-block= "TICK  BOXES"
-      .flex-but    
-        +tick('tiname','checked')
-        +tick('tiname1','unchecked')
+      .form-block
+        .form-left
+          +form   
+
+        .form-right 
+          .title-block__mini= "TOGGLES"
+          .flex-but    
+            +toggles('tname1','unchecked')  
+            +toggles('tname','checked')      
+          .title-block__mini= "TICK  BOXES"
+          .flex-but.but-tick    
+            +tick('tiname','checked')
+            +tick('tiname1','unchecked')
+            
+      .title-block__mini= "USER PROFILE"
+      +photo-circle("./img/man.jpg",'84px')
+      +photo-circle("./img/woman.jpg",'84px')
+
       .title-block= "NEWS  &  EVENTS"  
       .news-block   
         +news("./img/news.jpg",'It’s all going downhill','24  AUGUST  2013','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.') 
         +events("./img/events.jpg",'24','Aug','THIS IS THE TITLE','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','ADD  TO  CALENDAR')
-      .title-block= "USER PROFILE"
-      +photo-circle("./img/man.jpg",'84px')
-      +photo-circle("./img/woman.jpg",'84px')
 
       .title-block= "LOCATION"
 
