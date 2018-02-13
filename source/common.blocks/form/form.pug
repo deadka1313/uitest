@@ -1,13 +1,53 @@
 mixin form()
-  form(name="form-message" onsubmit="return valid()")
+  script.
+    function validForm(form) {
+      var elems = form.elements;
+      var at=elems.emailMessageForm.value.indexOf("@");
+      var dot=elems.emailMessageForm.value.indexOf(".");
+      if (!elems.nameMessageForm.value) {
+        document.getElementById("errorBubbleName").style.display = "block";
+        document.getElementById("thanksBubbleName").style.display = "none";
+        if (elems.emailMessageForm.value || !(at<1 || dot <1)) {
+          document.getElementById("thanksBubbleEmail").style.display = "block";
+          document.getElementById("errorBubbleEmail").style.display = "none";
+        }
+        if (!elems.emailMessageForm.value || at<1 || dot <1) {
+          document.getElementById("errorBubbleEmail").style.display = "block";
+          document.getElementById("thanksBubbleEmail").style.display = "none";
+        }
+        return false;
+      }
+      if ((!elems.emailMessageForm.value) || at<1 || dot <1) {
+        document.getElementById("errorBubbleEmail").style.display = "block";
+        document.getElementById("thanksBubbleEmail").style.display = "none";
+        if (elems.nameMessageForm.value) {
+          document.getElementById("thanksBubbleName").style.display = "block";
+          document.getElementById("errorBubbleName").style.display = "none";
+        }
+        return false;
+      }
+      if (elems.emailMessageForm.value || !(at<1 || dot <1)) {
+        if (elems.nameMessageForm.value) {
+          document.getElementById("thanksBubbleName").style.display = "block";
+          document.getElementById("errorBubbleName").style.display = "none";
+        }
+      }
+      if (!elems.messageForm.value) {
+        return false;
+      }
+      return true;
+    }
+  form(name="form-message" onsubmit="return validForm(this)")
     .input-table
-      input(type="text" name="name-message-form" style="width: 186px" placeholder="Your Name")
+      input(type="text" name="nameMessageForm" style="width: 186px" placeholder="Your Name")
       .block-input-text
-        +bubble('left','red','ERROR','errorBubble')
+        +bubble('left','red','ERROR','errorBubbleName')
+        +bubble('left','blue','THANKS!','thanksBubbleName')
     .input-table
-      input(type="text" name="email-message-form" style="width: 186px" placeholder="Your Email")
+      input(type="text" name="emailMessageForm" style="width: 186px" placeholder="Your Email")
       .block-input-text
-        +bubble('left','blue','THANKS!','thanksBubble')
-    textarea(name="message-form" cols="35" rows="4" placeholder="Your Massage" style="margin-bottom: 3px;")
+        +bubble('left','red','ERROR','errorBubbleEmail')
+        +bubble('left','blue','THANKS!','thanksBubbleEmail')
+    textarea(name="messageForm" cols="35" rows="4" placeholder="Your Massage" style="margin-bottom: 3px;")
     .button-input
       +button('submit-message-form','normal','blue','SUBMIT','submit') 
