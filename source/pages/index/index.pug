@@ -14,6 +14,7 @@ include ../../common.blocks/news/news
 include ../../common.blocks/events/events
 include ../../common.blocks/form/form
 include ../../common.blocks/user-profile/user-profile
+include ../../common.blocks/search/search
 
 block title
   |FlatUI
@@ -81,6 +82,11 @@ block main
           .flex-but.but-tick    
             +tick('tiname','checked')
             +tick('tiname1','unchecked')
+
+      .title-block__mini= "SEARCH / DROP DOWN"
+      +search
+      br
+      +search_not-found
             
       .title-block__mini= "USER PROFILE"
       +user-profile("./img/man.jpg","grey","John Smith","UX  DESIGNER")
@@ -92,6 +98,21 @@ block main
         +events("./img/events.jpg",'24','Aug','THIS IS THE TITLE','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','ADD  TO  CALENDAR')
 
       .title-block= "LOCATION"
+      <form action="#">
+ 
+        <fieldset>
+          <label for="speed">Select a speed</label>
+          <select name="speed" id="speed">
+            <option>Slower</option>
+            <option>Slow</option>
+            <option selected="selected">Medium</option>
+            <option>Fast</option>
+            <option>Faster</option>
+          </select>
+
+        </fieldset>
+      
+      </form>
 
       #calendar
 

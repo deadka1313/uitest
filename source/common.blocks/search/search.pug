@@ -1,0 +1,13 @@
+mixin search
+  form(onsubmit="return false")
+    .search
+      input(type="search" name="search" placeholder="Search")
+      button(type="submit")
+        include search.svg
+
+mixin search_not-found
+  form(onsubmit="return false")
+    .search_not-found
+      input(type="search" name="search" placeholder="I’ve not found what I’m looking for...")
+      button(type="submit")
+        include search.svg

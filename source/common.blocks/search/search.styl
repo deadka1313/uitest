@@ -1,0 +1,47 @@
+.search
+  display flex
+  & button 
+    position: relative
+    background redColor
+    height 28px
+    width 33px
+    outline none
+    border none   
+    border-radius 0 4px 4px 0
+    &::-moz-focus-inner 
+      padding:0;
+      border:0;
+    & svg 
+      position: absolute
+      top: 7px
+      left: 10px
+      
+  & input
+    border-radius 4px 0 0 4px
+    width: 255px
+
+.search_not-found
+  display flex
+  & button  
+    position: relative
+    background redColor
+    height 28px
+    width 33px
+    outline none
+    border none    
+    border-radius 0 4px 4px 0
+    &::-moz-focus-inner 
+      padding:0;
+      border:0;
+    & svg 
+      position: absolute
+      top: 7px
+      left: 10px
+  & input 
+    width: 255px
+    border-radius 4px 0 0 4px
+    background redColor
+    &::-webkit-input-placeholder {color:white;}
+    &::-moz-placeholder          {color:white;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:white;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:white;}
