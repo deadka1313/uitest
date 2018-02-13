@@ -14,3 +14,5 @@ $('#calendar').datepicker({
   showOtherMonths: true,
   dayNamesMin: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
   });
+
+  abc();
