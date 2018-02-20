@@ -1,0 +1,12 @@
+include ../../common.blocks/button/button
+include ../../common.blocks/photo-circle/photo-circle
+
+mixin reply(name,url,massage,massageReply)
+  .reply
+    .reply_name= name
+    .reply_second-block
+    +photo-circle(''+url,'84px')
+    .reply_massage= massage
+    .reply_massage-reply
+      textarea(name="messageReply" cols="35" rows="4" placeholder="Your massage" style="margin-bottom: 3px;")= massageReply
+    +button('reply_Button','normal','blue','reply','button')

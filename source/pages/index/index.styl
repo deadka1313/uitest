@@ -15,6 +15,8 @@
 @import '../../common.blocks/form/form.styl'
 @import '../../common.blocks/user-profile/user-profile.styl'
 @import '../../common.blocks/search/search.styl'
+@import '../../common.blocks/reply/reply.styl'
+@import '../../common.blocks/select-menu/select-menu.styl'
 
 .title-block
   width 100%
@@ -126,13 +128,128 @@
   font-size 18px
   letter-spacing 0.8px  
 
-fieldset {
-  border: 0!important;
+
+
+
+
+.ui-datepicker-calendar th 
+  font-size: 9px
+  letter-spacing 0px  
+  background redColor
+  color white
+  line-height:  27px
+  padding-top 0px!important
+  padding-bottom 0px!important
+
+.ui-datepicker-title
+  font-size: 24px
+  font-family 'Conv_Lato-Light'
+  color white
+  height 39px
+  line-height 36px!important
+
+.ui-datepicker-header
+  background #d54c2c
+  width: 279px
+  border-radius: 0
+
+.ui-datepicker-year
+  display none
+
+.ui-datepicker-unselectable
+  color white
+
+.ui-datepicker-calendar td
+  background #f2f2f2
+  border-bottom: 1px solid white!important
+  border-right: 1px solid white!important
+  font-size: 17px
+  font-family 'LatoRegular'
+  line-height: 38px;
+  letter-spacing: 0px
+  vertical-align: middle
+
+.ui-datepicker-calendar td a 
+  color #868686
+.ui-datepicker-calendar tr   
+  width: 300px!important
+
+.ui-datepicker-calendar .ui-state-active {
+ background redColor
+ color white
 }
-label {
-  display: block!important;
-  margin: 30px 0 0 0!important;
+
+.ui-datepicker-calendar .ui-state-default {
+ display: block;
+ width: 37px;
+ outline: none;
+ padding: 0px
+
+ text-decoration: none;
+
 }
-.overflow {
-  height: 200px!important;
-}
+
+.ui-datepicker td span, .ui-datepicker td a 
+  text-align: center!important
+
+.ui-datepicker-prev 
+  top 14px!important
+  left 13px!important
+  & span
+    border solid white  
+    border-width 0 3px 3px 0
+    display inline-block
+    width 8px
+    height 8px
+    transform rotate(135deg)
+    -webkit-transform rotate(135deg)
+    margin-left 16px
+
+.ui-datepicker-next 
+  top 14px!important
+  right 9px!important
+  & span
+    border solid white  
+    border-width 0 3px 3px 0
+    display inline-block
+    width 8px
+    height 8px
+    transform rotate(-45deg)
+    -webkit-transform rotate(-45deg)
+    margin-left 8px
+
+.ui-datepicker-calendar
+  margin 0!important
+
+.ui-datepicker
+  padding: 0!important
+
+.day-of-calendar
+  background redColor
+  border-radius: 4px 4px 0 0
+  height 109px
+  width 279px
+  padding: 0
+  text-align center
+  font-family 'Conv_Lato-Light'
+  font-size: 80px
+  color white
+  letter-spacing: -3px
+
+.ui-datepicker-buttonpane
+  margin 0!important
+  padding 0!important
+
+.ui-datepicker-current
+  background greyColor
+  margin 0!important
+  border 0!important
+  font-family: 'Conv_Lato-Black';
+  font-size: 13px
+  color: #868685
+  width 279px!important
+  height 49px
+  outline none
+  text-align: left
+  letter-spacing: 1px
+  padding: 0 0 0 20px!important

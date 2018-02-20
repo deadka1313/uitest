@@ -1,5 +1,11 @@
 require('webpack-jquery-ui/selectmenu');
 
 $( function() {
-  $( "#speed" ).selectmenu();
+  $( "#speed" ).selectmenu({
+    classes: {
+      "ui-selectmenu-icon": "speed-icon"
+    }
+  });
+  
+
 } );
