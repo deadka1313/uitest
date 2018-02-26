@@ -1,6 +1,6 @@
 include ../../common.blocks/bubble/bubble
 
-mixin user-profile(url, color, name, skill)
+mixin user-profile(url, color, name, skill, href_fb, href_tw, href_dr)
   .user-profile
     +photo-circle(''+url,'84px')
-    +bubble('left', ''+color, '<p>'+name+'</p><p>'+skill+'</p>')
+    +bubble('left', ''+color, '<p class="user-profile_name">'+name+'</p><p class="user-profile_skill">'+skill+'</p><a class="user-profile_facebook" href="'+href_fb+'"></a><a class="user-profile_twitter" href="'+href_tw+'"></a><a class="user-profile_dribbble" href="'+href_dr+'"></a>')

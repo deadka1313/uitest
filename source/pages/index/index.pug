@@ -85,15 +85,20 @@ block main
             +tick('tiname','checked')
             +tick('tiname1','unchecked')
 
-      .title-block__mini= "SEARCH / DROP DOWN"
-      +search
-      br
-      +search_not-found
-      +select-menu
-            
-      .title-block__mini= "USER PROFILE"
-      +user-profile("./img/man.jpg","grey","John Smith","UX  DESIGNER")
-      +user-profile("./img/woman.jpg","blue","Sarah Brown","DEVELOPER")
+      .search-user-block
+        .search-user-left
+          .title-block__mini= "SEARCH / DROP DOWN"
+          .search_align
+            +search
+            br
+            +search_not-found
+            br
+            +select-menu
+        .search-user-right            
+          .title-block__mini= "USER PROFILE"
+          .user_align
+            +user-profile("./img/man.jpg","grey","John Smith","UX  DESIGNER","#","#","#")
+            +user-profile("./img/woman.jpg","blue","Sarah Brown","DEVELOPER","#","#","#")
 
       .title-block= "NEWS  &  EVENTS"  
       .news-block   
