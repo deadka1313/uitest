@@ -102,12 +102,14 @@ block main
 
       .title-block= "LOCATION"
 
-      
-      #calendar
-        input.day-of-calendar
-
-      .title-block__mini= "MESSAGING"
-        +reply("Sarah Brown","./img/woman.jpg","Hey! So are we cool to meet at the art gallery? Say 8pm","Yeah that sounds great. See you then.")
+      .calendar-and-messaging
+        .form-left
+          .title-block__mini= "CALENDAR"
+          #calendar
+            input.day-of-calendar
+        .form-right
+          .title-block__mini= "MESSAGING"
+          +reply("Sarah Brown","./img/woman.jpg","Hey! So are we cool to meet at the art gallery? Say 8pm","Yeah that sounds great. See you then.")
 
       .title-block= "VIDEO"
       .video-frame
