@@ -17,6 +17,7 @@
 @import '../../common.blocks/search/search.styl'
 @import '../../common.blocks/reply/reply.styl'
 @import '../../common.blocks/select-menu/select-menu.styl'
+@import '../../common.blocks/google-map/google-map.styl'
 
 .title-block
   width 100%
@@ -157,6 +158,25 @@
   .user_align
     margin-left 0px
 
+.news-block
+  margin-top 32px
+  display flex  
+  flex-direction row
+  justify-content center
+  flex-wrap wrap
+  margin-bottom -35px
+  & .news 
+    max-width 288px
+    margin-right 18px
+  & .events 
+    max-width 288px
+
+@media only screen and (max-width: 699px)
+  .news-block
+    & .news 
+      margin-right 0px
+      margin-bottom 20px
+
 .video-frame
   max-width 594px
 
@@ -182,14 +202,7 @@
     margin-right 9px
     margin-top 1px
 
-.news-block
-  display flex  
-  flex-direction row
-  & .news 
-    max-width 288px
-    margin-right 18px
-  & .events 
-    max-width 288px
+
 
 
 

@@ -17,6 +17,7 @@ include ../../common.blocks/user-profile/user-profile
 include ../../common.blocks/search/search
 include ../../common.blocks/reply/reply
 include ../../common.blocks/select-menu/select-menu
+include ../../common.blocks/google-map/google-map
 
 block title
   |FlatUI
@@ -106,7 +107,7 @@ block main
         +events("./img/events.jpg",'24','Aug','THIS IS THE TITLE','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','ADD  TO  CALENDAR')
 
       .title-block= "LOCATION"
-
+      +google-map
       .calendar-and-messaging
         .form-left
           .title-block__mini= "CALENDAR"
